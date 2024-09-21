@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Signature App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main class="main">
+        <div class="main-box">
+            <div class="top-box">
+                <div class="text-color-picker-box">
+                    <p>Text color picker</p>
+                    <input class="input-box" type="color" id="color-picker">
+                </div>
+                <div class="background-picker-box">
+                    <p>Background</p>
+                    <input class="input-box" type="color" id="canvas-color">
+                </div>
+                <div class="font-size-box">
+                    <p>Font size</p>
+                    <select class="select-box" id="font-size-picker" type="select">
+                        <option value="5">5px</option>
+                        <option value="10">10px</option>
+                        <option value="20">20px</option>
+                        <option value="30">30px</option>
+                        <option value="40">40px</option>
+                        <option value="50">50px</option>
+                    </select>
+                </div>
+            </div>
+            <div class="middle-box">
+                <canvas class="canvas" id="signature-canvas" width="830" height="430"></canvas>
+            </div>
+            <div class="down-box">
+                <div class="clear-box">
+                    <button type="button" class="btn" id="clear-btn">Clear</button>
+                </div>
+                <div class="download-box">
+                    <button type="button" class="btn" id="download-btn">Save and Download</button>
+                </div>
+                <div class="retrieve-box">
+                    <button type="button" class="btn" id="retrieve-btn">Retrieve saved signature</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
